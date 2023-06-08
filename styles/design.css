@@ -1,0 +1,188 @@
+body{
+  background-color:  hsl(210, 46%, 95%);
+}
+p{
+  font-size: 13px;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.leftside{
+  height: 250px;
+}
+.pic{
+  height: 100%;
+  border-radius: 5px;
+}
+.rightside{
+  width: 400px;
+  height: 250px;
+  margin-left: -57px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-right: 20px;
+}
+.top1{
+  font-size: 15px;
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+  margin: 35px 10px 15px 35px;
+}
+.top2{
+  color: hsl(214, 17%, 51%);
+  margin: 0px 20px 20px 35px;
+}
+.info3{
+  display: flex;
+  margin: 40px 20px 20px 35px;
+}
+.avatar{
+  height: 30px;
+  border-radius: 15px;
+  margin: 0px 15px 0px 0px;
+}
+.top3-2{
+  font-size: 13px;
+  color: hsl(212, 23%, 69%);
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+.share-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share-btn{
+  border-style: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  padding: 0px;
+  cursor: pointer;
+}
+.icon{
+  width: 13px;
+  height: 13px;
+}
+.share-icon{
+  height: 15px;
+  cursor: pointer;
+}
+.share{
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: hsl(212, 23%, 69%);
+}
+.tooltip{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 13px 40px ;
+  background-color: hsl(217, 19%, 35%);
+  width: 150px;
+  margin: 0px 0px 100px 0px;
+  border-radius: 7px;
+  opacity: 1;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 9;
+}
+
+.hidden{
+  display: none;
+}
+.direction{
+  position: absolute;
+  width: 0;
+  height:0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid hsl(217, 19%, 35%);
+  margin: 40px 0px 0px 60px;
+}
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px){
+  .page{
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .leftside{
+    width: 300px;
+  }
+  .pic{
+    height: 250px;
+    width: 300px;
+  }
+  .rightside{
+    width: 300px;
+    margin-left: 0px;
+    padding: 0px;
+    margin-top: -41px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 7px;
+    height: 240px;
+  }
+  .top1{
+    margin: 30px 25px 0px 25px;
+    font-size: 14px;
+  }
+  .top2{
+    margin: 15px 25px 15px 25px;
+    font-size: 12px;
+  }
+  .info3{
+    margin: 25px 25px 2px 25px;
+  }
+  .direction{
+    display: none;
+  }
+  .tooltip{
+    margin: 20px 20px 20px -200px;
+    width: 240px;
+    padding: 20px 30px 20px 30px;
+    justify-content: start;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    z-index: 10;
+  }
+  .share, .share-icon{
+    margin-right: 15px;
+  }
+  .share-btn{
+    z-index: 200;
+  }
+  .clicked{
+    background-color: hsl(214, 17%, 51%);
+  }
+  .color{
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(217deg) brightness(1000%) contrast(100%);
+  }
+  
+}
